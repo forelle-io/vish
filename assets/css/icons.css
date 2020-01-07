@@ -1,0 +1,70 @@
+[class^="app-navigation-icon"] {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+[class^="app-report-icon"] {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.app-navigation-icon-activity {
+  background-image: url("~assets/icons/activity.svg");
+}
+.app-navigation-icon-activity-active {
+  background-image: url("~assets/icons/activity-active.svg");
+}
+
+.app-navigation-icon-reports {
+  background-image: url("~assets/icons/reports.svg");
+}
+.app-navigation-icon-reports-active {
+  background-image: url("~assets/icons/reports-active.svg");
+}
+
+.app-navigation-icon-departures {
+  background-image: url("~assets/icons/departures.svg");
+}
+.app-navigation-icon-departures-active {
+  background-image: url("~assets/icons/departures-active.svg");
+}
+
+.app-navigation-icon-ponds {
+  background-image: url("~assets/icons/ponds.svg");
+}
+.app-navigation-icon-ponds-active {
+  background-image: url("~assets/icons/ponds-active.svg");
+}
+
+.app-navigation-icon-organizations {
+  background-image: url("~assets/icons/organizations.svg");
+}
+.app-navigation-icon-organizations-active {
+  background-image: url("~assets/icons/organizations-active.svg");
+}
+
+.app-navigation-icon-users {
+  background-image: url("~assets/icons/users.svg");
+}
+.app-navigation-icon-users-active {
+  background-image: url("~assets/icons/users-active.svg");
+}
+
+.app-navigation-icon-settings {
+  background-image: url("~assets/icons/settings.svg");
+}
+.app-navigation-icon-settings-active {
+  background-image: url("~assets/icons/settings-active.svg");
+}
+
+.app-report-icon-calendar {
+  background-image: url("~assets/icons/calendar.svg");
+}
+
+.app-report-icon-auto {
+  background-image: url("~assets/icons/auto.svg");
+}
