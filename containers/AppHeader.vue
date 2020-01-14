@@ -7,19 +7,7 @@
         </h1>
       </el-col>
       <el-col :span="6" :offset="14">
-        <el-row type="flex" align="middle" justify="space-between">
-          <el-col :span="3">
-            <el-button
-              type="primary"
-              size="small"
-              icon="el-icon-plus"
-              circle/>
-            <el-button
-              @click="$router.push('login')"
-            >
-              Войти
-            </el-button>
-          </el-col>
+        <el-row key="logged" type="flex" align="middle" justify="space-between">
           <el-col :span="3">
             <el-avatar
               shape="square"
@@ -40,6 +28,16 @@
                 <el-dropdown-item divided>Action 5</el-dropdown-item>
               </el-dropdown-menu>
             </el-dropdown>
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="3">
+            <el-button
+              size="small"
+              @click="$router.push('login')"
+            >
+              Войти
+            </el-button>
           </el-col>
         </el-row>
       </el-col>

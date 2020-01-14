@@ -17,8 +17,7 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth',
-    '@nuxtjs/pwa'
+    // '@nuxtjs/pwa'
   ],
   plugins: ['~plugins/ElementIO', '~plugins/VueMask'],
   build: {
@@ -36,11 +35,10 @@ module.exports = {
       }
     }
   },
-  auth: {
-    // Options
-  },
   axios: {
-    // proxyHeaders: false
-  }
+    proxy: true
+  },
+  // proxy: {
+  // }
 }
 

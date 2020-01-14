@@ -56,9 +56,21 @@
         this.$refs.loginForm.validate((isValid) => {
           if (isValid) {
             this.isLoadingState = true
-            setTimeout(() => {
-              this.isLoadingState = false
-            }, 2500)
+            this.$auth
+              .loginWith('local', {
+                data: {
+                  phone: this.authForm.phone
+                }
+              })
+              .then(() => {
+                this.$router.push('/')
+              })
+              .catch(e => {
+
+              })
+              .finally(() => {
+                this.isLoadingState = true
+              })
           } else {
             return false
           }
