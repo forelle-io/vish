@@ -56,16 +56,14 @@
         this.$refs.loginForm.validate((isValid) => {
           if (isValid) {
             this.isLoadingState = true
-            this.$auth
-              .loginWith('local', {
-                data: {
-                  phone: this.authForm.phone
-                }
-              })
+            this.$store.dispatch('login', {
+              phone: this.authForm.phone,
+              smsCode: '7777'
+            })
               .then(() => {
                 this.$router.push('/')
               })
-              .catch(e => {
+              .catch(() => {
 
               })
               .finally(() => {

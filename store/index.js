@@ -1,7 +1,28 @@
 export const state = () => ({
-    // root state-function returns object
+    token: ''
 })
 
 export const mutations = {
-  // root mutations
+  login(state, { token = ''} = {}) {
+    state.token = token
+  },
+  logout(state) {
+    state.token = ''
+  }
+}
+
+export const actions = {
+  login({ commit }, { phone = '', smsCode = ''} = {}) {
+    return this.$axios({
+      method: 'post',
+      url: '/api/v1/auth/authenticate/user',
+      data: {
+        phone: phone,
+        sms_code: smsCode
+      }
+    }).then(({ data }) => {
+      commit('login', data)
+      return
+    })
+  }
 }

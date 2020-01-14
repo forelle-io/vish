@@ -17,7 +17,8 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: [
     '@nuxtjs/axios',
-    // '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/proxy'
   ],
   plugins: ['~plugins/ElementIO', '~plugins/VueMask'],
   build: {
@@ -38,7 +39,8 @@ module.exports = {
   axios: {
     proxy: true
   },
-  // proxy: {
-  // }
+  proxy: {
+    '/api/': { target: 'http://localhost:4000/' }
+  }
 }
 
