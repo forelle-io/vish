@@ -44,7 +44,7 @@ node -v
 
 Клонируем репозиторий в любую папку
 ```shell
-git clone https://github.com/forelle-io/jish
+git clone https://github.com/forelle-io/vish
 ```
 
 Заходим в папку проекта и устанавливаем зависимости
