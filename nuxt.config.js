@@ -20,7 +20,11 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/proxy'
   ],
-  plugins: ['~plugins/ElementIO', '~plugins/VueMask'],
+  plugins: [
+      '~plugins/ElementIO',
+      '~plugins/VueMask',
+      '~plugins/Vish-UI'
+  ],
   build: {
     /*
     ** Run ESLint on save

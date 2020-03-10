@@ -1,6 +1,8 @@
 <template>
     <div>
-      Profile
+      <ui-card>
+          Profile
+      </ui-card>
     </div>
 </template>
 
