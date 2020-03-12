@@ -23,9 +23,10 @@ module.exports = {
   plugins: [
       '~plugins/ElementIO',
       '~plugins/VueMask',
-      '~plugins/Vish-UI'
+      {src: '~plugins/Vish-UI', mode: 'client'}
   ],
   build: {
+    vendor: ['vish-ui'],
     /*
     ** Run ESLint on save
     */
