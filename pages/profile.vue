@@ -1,8 +1,11 @@
 <template>
-    <div>
-      <ui-card>
-          Profile
-      </ui-card>
+    <div class="page-profile">
+        <div class="page-profile__left-bar">
+
+        </div>
+        <div class="page-profile__posts">
+
+        </div>
     </div>
 </template>
 
@@ -12,6 +15,8 @@
     }
 </script>
 
-<style scoped>
+<style>
+    .page-profile {
 
+    }
 </style>

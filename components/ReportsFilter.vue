@@ -10,26 +10,6 @@
                 </div>
             </el-collapse-item>
             <el-collapse-item title="Водоем" name="2">
-                <el-checkbox-group v-model="checkList">
-                    <el-checkbox label="Песок"></el-checkbox>
-                    <el-checkbox label="Option B"></el-checkbox>
-                    <el-checkbox label="Option C"></el-checkbox>
-                </el-checkbox-group>
-                <el-checkbox-group v-model="checkList">
-                    <el-checkbox label="Option A"></el-checkbox>
-                    <el-checkbox label="Option B"></el-checkbox>
-                    <el-checkbox label="Option C"></el-checkbox>
-                </el-checkbox-group>
-                <el-checkbox-group v-model="checkList">
-                    <el-checkbox label="Option A"></el-checkbox>
-                    <el-checkbox label="Option B"></el-checkbox>
-                    <el-checkbox label="Option C"></el-checkbox>
-                </el-checkbox-group>
-                <el-checkbox-group v-model="checkList">
-                    <el-checkbox label="Option A"></el-checkbox>
-                    <el-checkbox label="Option B"></el-checkbox>
-                    <el-checkbox label="Option C"></el-checkbox>
-                </el-checkbox-group>
             </el-collapse-item>
             <el-collapse-item title="Отчеты" name="3">
                 <div>Simplify the process: keep operating process simple and intuitive</div>
@@ -44,6 +24,11 @@
         data () {
             return {
                 timestamp: ''
+            }
+        },
+        methods: {
+            handleChange (event) {
+                return event
             }
         }
     }
