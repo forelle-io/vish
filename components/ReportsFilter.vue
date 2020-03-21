@@ -23,7 +23,8 @@
         name: "ReportsFilter",
         data () {
             return {
-                timestamp: ''
+                timestamp: '',
+                activeNames: []
             }
         },
         methods: {

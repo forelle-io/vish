@@ -11,6 +11,10 @@ export const mutations = {
   }
 }
 
+export const getters = {
+  isAuthorized: state => state.token.length > 0
+}
+
 export const actions = {
   login({ commit }, { phone = '', smsCode = ''} = {}) {
     return this.$axios({
