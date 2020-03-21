@@ -7,7 +7,7 @@
         </h1>
       </el-col>
       <el-col :span="6" :offset="14">
-        <el-row key="logged" type="flex" align="middle" justify="space-between">
+        <el-row key="logged" type="flex" align="middle" justify="space-between" v-if="isAuthorized">
           <el-col :span="3">
             <el-avatar
               shape="square"
@@ -30,14 +30,11 @@
             </el-dropdown>
           </el-col>
         </el-row>
-        <el-row>
+        <el-row v-else>
           <el-col :span="3">
-            <el-button
-              size="small"
-              @click="$router.push('login')"
-            >
+            <vish-button @click="$router.push('login')" rounded>
               Войти
-            </el-button>
+            </vish-button>
           </el-col>
         </el-row>
       </el-col>
@@ -46,7 +43,11 @@
 </template>
 <script>
 export default {
-
+  computed: {
+    isAuthorized () {
+      return this.$store.getters.isAuthorized
+    }
+  }
 }
 </script>
 <style scoped>
@@ -56,6 +57,8 @@ export default {
     margin-bottom: 40px;
   }
   .header-logo-wrapper {
+    font-family: Roboto;
+    font-style: normal;
     text-align: center;
     font-weight: 900;
     font-size: 22px;

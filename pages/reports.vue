@@ -22,7 +22,17 @@
 
 <script>
     export default {
-        name: "reports"
+        name: "reports",
+        data () {
+            return {
+                activeNames: []
+            }
+        },
+        methods: {
+            handleChange (event) {
+                return event
+            }
+        }
     }
 </script>
 

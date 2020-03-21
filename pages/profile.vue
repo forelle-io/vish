@@ -1,22 +1,32 @@
 <template>
     <div class="page-profile">
-        <div class="page-profile__left-bar">
+        <vish-row justify="space-between" align-items="flex-start">
+            <div>
 
-        </div>
-        <div class="page-profile__posts">
-
-        </div>
+            </div>
+            <div>
+                <report-preview/>
+                <report-preview/>
+                <report-preview/>
+                <report-preview/>
+                <report-preview/>
+                <report-preview/>
+            </div>
+            <div>
+                <reports-filter/>
+            </div>
+        </vish-row>
     </div>
 </template>
 
 <script>
+    import ReportPreview from "../components/ReportPreview";
+    import ReportsFilter from '../components/ReportsFilter'
     export default {
-        name: "profile"
+        name: "profile",
+        components: {
+            ReportPreview,
+            ReportsFilter
+        }
     }
 </script>
-
-<style>
-    .page-profile {
-
-    }
-</style>
